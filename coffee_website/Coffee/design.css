@@ -1,0 +1,377 @@
+
+:root {
+    --espresso: #2B1B12;
+    --kraft: #E8DCC8;
+    --kraft-soft: #cfc0a2;
+    --gold: #C9A227;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #38261d;
+    background-color: #f3d9b4;
+    line-height: 1.6;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    padding: 18px 40px; 
+    background: var(--espresso);
+    border-bottom: 3px solid var(--gold);
+    box-shadow: 0 4px 10px -6px rgba(0, 0, 0, 0.5);
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    font-size: 24px;
+    color: var(--kraft);
+    letter-spacing: 0.01px;
+    white-space: nowrap;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+}
+nav a {
+    position: relative;
+    color: var(--kraft-soft);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 8px 14px
+}
+
+nav a:hover {
+    color: var(--gold);
+}
+
+.intro {
+    min-height: 800px;
+    padding: 80px 7%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+    background: linear-gradient(135deg, #fff8ed, #ead1b1);
+}
+
+.title {
+    font-size: 18px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    color: #9a633b;
+}
+
+.intro h1 {
+    font-size: clamp(42px, 6vw, 76px);
+    line-height: 1.05;
+    margin: 15px 0 25px;
+}
+
+.intro h1 span {
+    color: #9b5f36;
+}
+
+.introText > p:not(.title) {
+    max-width: 600px;
+    font-size: 18px;
+    color: #614a3d;
+}
+
+/* ======================= */
+/* BUTTON */
+/* ======================= */
+
+.button {
+    display: inline-block;
+    background-color: #6f3e23;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 22px;
+}
+
+.button:hover {
+    background-color: #4d2919;
+}
+
+/* ======================= */
+/* IMAGE 1 INTRO */
+/* ======================= */
+
+.image-box img {
+    width: 70%;
+    height: 50%;
+    object-fit: cover;
+    display: block;
+    border-radius: 24px;
+    box-shadow: 0 20px 50px #3b241833;
+    margin-left: 150px;
+}
+
+/* ======================= */
+/* ABOUT COFFEE*/
+/* ======================= */
+
+
+
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 100px;
+}
+
+.section-heading p {
+    font-size: 20px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    color: #9a633b;
+}
+
+.section-heading h2 {
+    font-size: 42px;
+}
+
+.about {
+    max-width: 700px;
+    margin: auto;
+    display: grid;
+    align-items: center;
+    font-size: 25px;
+    margin-bottom: 100px;
+    grid-template-columns: 3fr 2fr;
+
+}
+
+
+.about p {
+    margin-bottom: 15px;
+}
+
+/* ======================= */
+/* IMAGE 2 INTRO */
+/* ======================= */
+
+.student1 img {
+    width: 200%;
+    height: 600px;
+    object-fit: cover;
+    display: block;
+    background: #d9c0a4;
+    border-radius: 20px;
+    box-shadow: 0 20px 50px #3b241833;
+    margin-left: 150px;
+}
+.face1 img {
+    width: 200%;
+    height: 50%;
+    position: relative;
+    background: #d9c0a4;
+    border-radius: 20px;
+    box-shadow: 0 20px 50px #3b241833;
+    margin-left: 100px;
+}
+
+
+
+/* ======================= */
+/* TYPES OF COFFEE */
+/* ======================= */
+
+.sectionTypes {
+background-color: #d19676;
+}
+
+.sectionTypes {
+    padding: 70px 1%;
+}
+
+.cards-sm {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.cards-xl {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+}
+
+
+.card-image img {
+    width: 100%;
+    height: 30%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.coffee-card {
+    background-color: #d9c0a4;
+    padding-bottom: 20px;
+    border: 1px solid #dcc6ad;
+    border-radius: 25px;
+    text-align: center;
+}
+
+.coffee-card:hover {
+    transform: translateY(-8px); /* Moves the card up slightly */
+    box-shadow: 0 12px 20px rgba(0, 0, 0.6, 0.6); /* Makes the shadow deeper and larger */
+}
+
+.coffee-card h3 {
+    text-align: center;
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.button2 {
+    background-color: #6f3e23;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+@media (max-width: 700px) {
+    .about {
+        grid-template-columns: 1fr;
+    }
+}
+
+.contact-section {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 50px 20px;
+
+    background-image:linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('../img/arabicaimg.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+
+.contact-container {
+    width: 900px;
+    max-width: 90%;
+
+    display: flex;
+
+    background-color: white;
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Left side */
+.contact-info {
+    width: 40%;
+    background-color: #222;
+    color: white;
+
+    padding: 40px;
+}
+
+.contact-info h1 {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.contact-info p {
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+/* Right side */
+.contact-form {
+    width: 60%;
+    padding: 40px;
+}
+
+.contact-form h2 {
+    margin-bottom: 25px;
+    color: #f3d9b4;
+}
+
+.form-label {
+    color: #f3d9b4;
+}
+
+/* Form labels */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Input and textarea */
+input,
+textarea {
+    width: 100%;
+    padding: 12px;
+
+    margin-bottom: 20px;
+
+    border: 1px solid #ccc;
+    border-radius: 5px;
+
+    font-size: 15px;
+}
+
+/* Input when clicked */
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: #222;
+}
+
+/* Button */
+button {
+    width: 100%;
+    padding: 13px;
+
+    background-color: #222;
+    color: white;
+
+    border: none;
+    border-radius: 5px;
+
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Button hover */
+button:hover {
+    background-color: #444;
+}
+
+footer {
+    background:#3b2418;
+    color:#fff;
+    padding:35px 7%;
+    display:flex;
+    justify-content:space-between;
+    gap:20px;
+    align-items:center
+}

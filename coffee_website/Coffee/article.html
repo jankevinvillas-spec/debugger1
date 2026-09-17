@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Articles & Reviews</title>
+  <style>
+:root {
+    --espresso: #2B1B12;
+    --kraft: #E8DCC8;
+    --kraft-soft: #cfc0a2;
+    --gold: #C9A227;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #38261d;
+    background-color: #f3d9b4;
+    line-height: 1.6;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    padding: 18px 40px; 
+    background: var(--espresso);
+    border-bottom: 3px solid var(--gold);
+    box-shadow: 0 4px 10px -6px rgba(0, 0, 0, 0.5);
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    font-size: 24px;
+    color: var(--kraft);
+    letter-spacing: 0.01px;
+    white-space: nowrap;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+}
+nav a {
+    position: relative;
+    color: var(--kraft-soft);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 8px 14px
+}
+
+nav a:hover {
+    color: var(--gold);
+}
+
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 50px 20px;
+    }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .subtitle {
+      text-transform: uppercase;
+      font-size: 0.85rem;
+      letter-spacing: 2px;
+      color: var(--rust);
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+
+    .section-header h1 {
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 2.4rem;
+      color: var(--espresso);
+      font-weight: bold;
+    }
+
+    .articles-wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+    }
+
+    .article-card {
+      display: grid;
+      grid-template-columns: 320px 1fr;
+      gap: 30px;
+      background-color: rgba(255, 255, 255, 0.35);
+      border: 1px solid var(--kraft-soft);
+      border-radius: 10px;
+      padding: 24px;
+      align-items: center;
+    }
+
+    .article-image {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .article-content {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .meta-info {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 8px;
+    }
+
+    .category {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: var(--rust);
+      font-weight: bold;
+    }
+
+    .rating-stars {
+      color: var(--gold);
+      font-size: 0.9rem;
+    }
+
+    .article-title {
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 1.6rem;
+      color: var(--espresso);
+      margin-bottom: 12px;
+      line-height: 1.25;
+    }
+
+    .article-body p {
+      color: var(--espresso-deep);
+      font-size: 0.95rem;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="logo">☕ DEBUGGER</div>
+    <nav>
+    <a href="frontpage.html">Home</a>
+    <a href="frontpage.html">About</a>
+    <a href="frontpage.html">Types</a>
+    <a href="team.html">Team</a>
+    <a href="contact.html">Contact Us</a>
+    <a href="article.html">Articles</a>
+    </nav>
+</header>
+    <div class="articles-wrapper">
+
+      <article class="article-card">
+        <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=600&q=80"
+          alt="Liberica Coffee Beans" class="article-image">
+        <div class="article-content">
+          <div class="meta-info">
+            <span class="category">Bean Review</span>
+            <span class="rating-stars">★★★★★</span>
+          </div>
+          <h2 class="article-title">Philippine Liberica: A Bold Taste Test</h2>
+          <div class="article-body">
+            <p>Known locally as <em>Kapeng Barako</em>, Liberica accounts for less than 2% of commercial coffee grown
+              worldwide. Upon tasting, this unique dark roast presents a distinct floral and jackfruit aroma paired with
+              a full-bodied, woody flavor profile.</p>
+            <p>Its low acidity makes it exceptionally smooth on the palate, offering a dark cocoa finish that stands out
+              compared to standard Arabica blends.</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="article-card">
+        <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=600&q=80"
+          alt="Pour Over Coffee Brewing" class="article-image">
+        <div class="article-content">
+          <div class="meta-info">
+            <span class="category">Brewing Guide</span>
+          </div>
+          <h2 class="article-title">Mastering the Pour-Over Method</h2>
+          <div class="article-body">
+            <p>Brewing the perfect cup of specialty coffee requires precision in water temperature, grind coarseness,
+              and timing. For medium and dark roasts, aim for a water temperature between 90°C–93°C to extract optimum
+              sweetness without harsh bitterness.</p>
+            <p>Use a 1:15 coffee-to-water ratio and pour gently in concentric circles to allow the grounds to bloom
+              fully for about 30 seconds before finishing your pour.</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="article-card">
+        <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=600&q=80"
+          alt="Traditional Coffee Prep" class="article-image">
+        <div class="article-content">
+          <div class="meta-info">
+            <span class="category">Coffee History</span>
+          </div>
+          <h2 class="article-title">From Bean to Cup: The Heritage</h2>
+          <div class="article-body">
+            <p>Coffee cultivation in tropical regions relies on decades of traditional harvesting and processing
+              techniques. After picking ripe coffee cherries, farmers carefully remove the pulp, dry the beans under
+              direct sunlight, and roast them in small batches to preserve regional flavor qualities.</p>
+            <p>Supporting local farms ensures these heritage roasting techniques remain alive while promoting
+              sustainable agricultural practices across coffee-growing communities.</p>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </main>
+
+</body>
+
+</html>
